@@ -1,18 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap');
+
+/* Tags Gerais */
+
 * {
     box-sizing: border-box;
+}
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inicial {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .fundo {
     background-color: #FB6B6B;
     width: 100%;
     height: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    min-height: 667px;
+    min-height: 844px;
+    position: relative;
+    padding-bottom: 70px;
 }
+
+/* Tela 1 */
 
 .titulo > img {
     width: 136px;
@@ -38,4 +56,81 @@
     font-size: 22px;
     font-family: 'Recursive';
     font-style: normal;
+}
+
+/* Tela 2 */
+
+.logo {
+    display: flex;
+    margin-top: 48px;
+}
+
+.logo img {
+    width: 52px;
+    height: 60px;
+}
+
+.logo h1 {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.deck { 
+    overflow-y: scroll;
+    padding-left: 38px;
+    padding-right: 38px;
+
+}
+
+.flashcard {
+    width: 300px;
+    height: 65px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.flashcard > span {
+    font-family: 'Recursive';
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.flashcard > ion-icon {
+    color: #333333;
+    width: 20px;
+    height: 23px;
+}
+
+.acertos {
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 3px 3px 0px 0px;
+}
+
+.acertos > p {
+    color: #333333;
+    font-family: 'Recursive';
+    font-size: 18px;
+    text-align: center;
+}
+
+.oculto {
+    display: none;
 }
