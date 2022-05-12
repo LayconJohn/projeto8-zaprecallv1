@@ -110,22 +110,6 @@
     height: 23px;
 }
 
-.selecionado {
-    height: 130px;
-    position: relative;
-    align-items: initial;
-}
-
-.selecionado > span {
-    font-weight: 400;
-} 
-
-.selecionado > ion-icon {
-    position: absolute;
-    bottom: 5px;
-    right: 6px;
-}
-
 .acertos {
     width: 100%;
     height: 100px;
@@ -148,6 +132,58 @@
     text-align: center;
 }
 
+/* Tela 3 */
+
+.selecionado {
+    height: 130px;
+    position: relative;
+    align-items: initial;
+    flex-direction: column;
+}
+
+.selecionado > span {
+    font-weight: 400;
+} 
+
+.selecionado > ion-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 6px;
+}
+
+/* Tela 4 */
+.opcoes {
+    display: flex;
+}
+
+.opcoes > div {
+    width: 86px;
+    height: 38px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vermelho {
+    background-color: #FF3030;
+}
+
+.amarelo {
+    background-color: #FF922E;
+}
+
+.verde {
+    background-color: #2FBE34;
+}
+
+/* Oculto */
 .oculto {
     display: none;
 }
