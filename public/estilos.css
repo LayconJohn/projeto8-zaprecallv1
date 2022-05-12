@@ -116,6 +116,7 @@
     background-color: #FFFFFF;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -181,6 +182,63 @@
 
 .verde {
     background-color: #2FBE34;
+}
+
+/* Tela 5 */
+.errada {
+    color: red;
+}
+
+.errada > span {
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.errada > ion-icon{
+    color: red;
+}
+
+.quase-errada {
+    color: #FF922E;
+}
+
+.quase-errada > span{
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.quase-errada > ion-icon {
+    color: #FF922E;
+}
+
+.certa{
+    color: #2FBE34;
+}
+
+
+.certa > span{
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.certa > ion-icon {
+    color: #2FBE34;
+}
+
+.resultado {
+    display: flex;
+}
+
+.resultados ion-icon {
+    width: 23px;
+    height: 23px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+.respondida {
+    text-decoration: line-through
 }
 
 /* Oculto */
