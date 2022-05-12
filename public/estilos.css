@@ -79,7 +79,7 @@
     overflow-y: scroll;
     padding-left: 38px;
     padding-right: 38px;
-
+    margin-bottom: 70px;
 }
 
 .flashcard {
@@ -96,6 +96,7 @@
     margin-top: 25px;
 }
 
+
 .flashcard > span {
     font-family: 'Recursive';
     font-size: 16px;
@@ -107,6 +108,22 @@
     color: #333333;
     width: 20px;
     height: 23px;
+}
+
+.selecionado {
+    height: 130px;
+    position: relative;
+    align-items: initial;
+}
+
+.selecionado > span {
+    font-weight: 400;
+} 
+
+.selecionado > ion-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 6px;
 }
 
 .acertos {
