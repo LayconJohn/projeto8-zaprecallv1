@@ -241,6 +241,39 @@
     text-decoration: line-through
 }
 
+/* Tela6 */
+
+.finalizado {
+    height: 170px;
+    padding-left: 88px;
+    padding-right: 65px;
+}
+
+.finalizado h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.finalizado span{
+    display: flex;
+}
+
+.finalizado img {
+    width: 23px;
+    height: 23px;
+    margin-right: 12px;
+}
+
+.finalizado p {
+    flex-wrap: wrap;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.feito {
+    margin-bottom: 100px;
+}
+
 /* Oculto */
 .oculto {
     display: none;
