@@ -1,3 +1,13 @@
+function BotoesOpcao() {
+    return (
+        <div className="opcoes">
+            <div className="vermelho">Não lembrei</div>
+            <div className="amarelo">Quase não lembrei</div>
+            <div className="verde">Zap!</div>
+        </div>
+    )
+}
+
 export default function Flashcard(props) {
     //logic
     const flashcards = [
@@ -71,17 +81,10 @@ export default function Flashcard(props) {
     return (
 
         <main className="deck">
-            {flashcards.map((card, index) => {        
-            <div className={card.classe} key={index}>
+            {flashcards.map((card, index) => {
+                return <div className={card.classe} key={index}>
                 <span>{card.texto}</span>
-                {card.selecionado ? 
                 <ion-icon name={card.icone}></ion-icon>
-                :
-                <div className="opcoes">
-                    <div className="vermelho">Não lembrei</div>
-                    <div className="amarelo">Quase não lembrei</div>
-                    <div className="verde">Zap!</div>
-                </div>}
             </div>})}
         </main>
 

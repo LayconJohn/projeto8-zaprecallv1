@@ -9,11 +9,11 @@ import Tela7 from "./componentes/Tela7";
 import "./assets/css/reset.css";
 import "./assets/css/estilos.css";
 
-export default function App() {
+export default function App({botao}) {
     return (
         <>
-            <Tela1 />
-            <Tela2 />
+            {botao ? <Tela2 /> : <Tela1 /> }
+        
             <Tela3 />
             <Tela4 />
             <Tela5 />
