@@ -5,16 +5,13 @@ import Tela2 from "./Tela2";
 
 export default function TelaInicial() {
     //Estado
-    const [botao, setBotao] = React.useState(" ");
-    const [status, setStatus] = React.useState("")
-
-
+    const [status, setStatus] = React.useState(false)
     //render
     return (
         <>
-            <Tela1 status={status}/>
-            <Tela2 />
-           
+            {status ? <Tela2 />  : <Tela1 status={status} setStatus={setStatus}/>}
+            
+            
         </>
 
     )
