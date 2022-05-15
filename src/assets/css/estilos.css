@@ -59,6 +59,15 @@
     font-style: normal;
 }
 
+.botao:hover {
+    filter: opacity(0.9);
+    cursor: pointer;
+}
+
+.botao:active{
+    transform: translateY(2px);
+}
+
 /* Tela 2 */
 
 .logo {
@@ -97,6 +106,14 @@
     margin-top: 25px;
 }
 
+.nao-respondida:hover{
+    filter: opacity(0.9);
+    cursor: pointer;
+}
+
+.nao-respondida:active{
+    transform: translateY(2px);
+}
 
 .flashcard > span {
     font-family: 'Recursive';
