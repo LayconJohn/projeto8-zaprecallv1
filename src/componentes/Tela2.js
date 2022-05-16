@@ -1,17 +1,16 @@
 import React from "react";
 
 import Header from "./Header";
-import Flashcard from "./Flashcard";
+import Deck from "./Deck";
 import Footer from "./Footer";
-import FrenteFlashcard from "./FrenteFlashcard";
-import VersoFlashcard from "./VersoFlashcard";
 import Main from "./Main";
 
 
 
-export default function Tela2({selecionado}) {
+export default function Tela2() {
     //Estado
     const [perguntaAtiva, setPerguntaAtiva] = React.useState("oculto");
+    const [selecionado, setSelecionado] = React.useState(false);
 
     let flashcards = [
         {
@@ -100,14 +99,7 @@ export default function Tela2({selecionado}) {
         <div className={`fundo inicial`}>
             <Header link="https://s3-alpha-sig.figma.com/img/e6be/467f/fb389e27e5843720979bbb7f3e94e660?Expires=1653264000&Signature=IRCOuMPhZ-lRwVBuOoZoDD6nhf7vFefceaAZ7WKo64NYGAV4ZjZUmAyb3u9yybGDW6Cs2Zj8wG1myo8sRZ8E~JsbLWGcWUMuAxZ6ezzWwFqPbk-xZSf8VqHmebzQ76jX2DCU7Arq9-bs6th3U~6OT1pxo602SFEQGL15lOoIFgI0TdzIxvsmvSme2cnYTiiRkPb5OmWMzrj88dzmeup1CoC0uMvxG9-D1VOcIYkFbo5gf0ztF3880PU7-95RSls09na8m4rAvJM-5xIJfcOpn-7b1HhJ50LKfQccTYHpcacZU9gghqhYxN90HGo3j87BjJzaKqdGAnnmt87L~kabNg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"/>
             <Main>
-            {flashcards.map((card, index) => {
-                return <Flashcard classe={card.classe} key={card.id}>
-                    {card.selecionado ? 
-                    <VersoFlashcard pergunta={card.pergunta} icone='repeat-outline' /> 
-                    :
-                    <FrenteFlashcard texto={card.texto} icone='play-outline' />
-                    }
-                </Flashcard>})}
+                <Deck flashcards={flashcards} />
             </Main>
             <Footer />
         </div>
