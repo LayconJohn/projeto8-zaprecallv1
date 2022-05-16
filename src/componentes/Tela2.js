@@ -7,9 +7,8 @@ import Main from "./Main";
 
 
 
-export default function Tela2() {
+export default function Tela2({respondidas}) {
     //Estado
-    const [perguntaAtiva, setPerguntaAtiva] = React.useState("oculto");
     const [selecionado, setSelecionado] = React.useState(false);
 
     let flashcards = [
@@ -101,7 +100,7 @@ export default function Tela2() {
             <Main>
                 <Deck flashcards={flashcards} />
             </Main>
-            <Footer />
+            <Footer respondidas={respondidas}/>
         </div>
     )
 }

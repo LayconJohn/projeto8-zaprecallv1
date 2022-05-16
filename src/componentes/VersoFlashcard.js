@@ -1,7 +1,7 @@
 import BotoesFlashcard from "./BotoesFlashcard"
 import React from "react";
 
-export default function VersoFlashcard({pergunta, resposta, icone}) {
+export default function VersoFlashcard({pergunta, resposta, icone, setRespondido}) {
     //logic 
     const [mostraResposta, setMostraResposta] = React.useState("oculto");
     const [ocultaPergunta, setOcultaPergunta] = React.useState(" ");
@@ -17,7 +17,7 @@ export default function VersoFlashcard({pergunta, resposta, icone}) {
         <>
             <span onClick={exibirResposta}>{ocultaPergunta === " " ? pergunta : resposta}</span>
             <div className={ocultaPergunta} onClick={exibirResposta}><ion-icon name={icone}></ion-icon></div>
-            <BotoesFlashcard mostraResposta={mostraResposta}/>
+            <BotoesFlashcard mostraResposta={mostraResposta} setRespondido={setRespondido} />
         </>
     )   
 }
