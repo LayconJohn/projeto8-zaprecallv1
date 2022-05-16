@@ -1,10 +1,13 @@
-export default function Flashcard({setSelecionado, classe, index, children}) {
+import React from "react";
+
+export default function Flashcard({classe, id, children}) {
+    // 
+    const [selecionado, setSelecionado] = React.useState("false");
 
     //render
     return (
-        <div onClick={() => {return setSelecionado(true)}} className={`flashcard ${classe}`} key={index}>
+        <div onClick={(() => {return setSelecionado("true")})} className={`flashcard ${classe} ${selecionado}`} key={id}>
             {children}
         </div>
-        
     )
 }

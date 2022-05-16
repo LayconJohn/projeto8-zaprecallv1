@@ -1,4 +1,4 @@
-export default function FrenteFlashcard({texto, icone}) {
+export default function FrenteFlashcard({texto, icone, setSelecionado}) {
     return (
         <>
             <span>{texto}</span>
